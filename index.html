@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEDxNITKSurathkal | Ideas Worth Spreading</title>
+<meta name="description" content="TEDxNITKSurathkal brings TED Talks and live speakers together to inspire ideas and conversations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="logo" href="#top"><b>TED<sup>x</sup></b> NITK Surathkal</a>
+  <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <nav>
+    <a href="#experience">Experience</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a class="pill" href="#register">Register</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="sparks" aria-hidden="true"></canvas>
+    <div class="hero-in">
+      <p class="edition">Alchemy NITK · 2025 edition</p>
+      <h1><span class="red">TEDx</span><span class="ln">NITK</span><span class="ln">Surathkal</span></h1>
+      <p class="tag">Ideas worth spreading. Move your cursor to stir the embers, click to set one off.</p>
+      <div class="cta">
+        <a class="btn" href="#register">Register now</a>
+        <a class="btn ghost" href="#speakers">Meet the speakers</a>
+      </div>
+    </div>
+    <div class="facts">
+      <div><small>When</small><b>5:30 PM, 18 Oct</b></div>
+      <div><small>Where</small><b>SJA, NITK Surathkal</b></div>
+      <div><small>Speakers</small><b>6</b></div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div>
+    <span>Ideas worth spreading</span><span>Rethink what's possible</span><span>Spark curiosity</span><span>Ideas worth spreading</span><span>Rethink what's possible</span><span>Spark curiosity</span>
+  </div></div>
+
+  <section class="count">
+    <h2>Time until the big event</h2>
+    <div class="clock" id="clock" data-date="2026-10-18T17:30:00+05:30">
+      <div><b id="d">00</b><small>days</small></div>
+      <div><b id="h">00</b><small>hours</small></div>
+      <div><b id="m">00</b><small>minutes</small></div>
+      <div><b id="s">00</b><small>seconds</small></div>
+    </div>
+  </section>
+
+  <section id="experience" class="wrap">
+    <h2 class="big">The experience</h2>
+    <p class="lead">Since 2011, TEDxNITKSurathkal has brought fresh ideas to the student community. Each edition pushes boundaries and asks what else is possible.</p>
+    <div class="grid">
+      <article class="card tilt"><span class="num" data-to="6000" data-plus="1">0</span><h3>Community strength</h3><p>Curious people with an ever-growing appetite for learning.</p></article>
+      <article class="card tilt"><span class="num" data-to="2011">0</span><h3>Legacy</h3><p>One of India's top institutes is a key ingredient in our vision.</p></article>
+      <article class="card tilt"><span class="num" data-to="6">0</span><h3>Impactful ideas</h3><p>Powerful talks that challenge norms and can change lives.</p></article>
+      <article class="card tilt red-card"><span class="num small">Arabian Sea</span><h3>Location</h3><p>A venue hugging the coast, made for conversations that matter.</p></article>
+    </div>
+  </section>
+
+  <section id="speakers" class="wrap">
+    <h2 class="big">Our speakers</h2>
+    <p class="lead">Six thinkers, innovators and storytellers. Tap a card to peek.</p>
+    <div class="flips">
+      <button class="flip"><span class="face front">?</span><span class="face back">Revealed soon</span></button>
+      <button class="flip"><span class="face front">?</span><span class="face back">Revealed soon</span></button>
+      <button class="flip"><span class="face front">?</span><span class="face back">Revealed soon</span></button>
+      <button class="flip"><span class="face front">?</span><span class="face back">Revealed soon</span></button>
+      <button class="flip"><span class="face front">?</span><span class="face back">Revealed soon</span></button>
+      <button class="flip"><span class="face front">?</span><span class="face back">Revealed soon</span></button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2 class="big">What is TEDx?</h2>
+      <p class="lead">A TEDx event is a local gathering where live TED-style talks and performances are shared with the community. Volunteers organise it independently under a free license from TED, in the spirit of "ideas worth spreading."</p>
+      <a class="btn" href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" rel="noopener">Learn more about TEDx</a>
+    </div>
+  </section>
+
+  <section id="register" class="wrap">
+    <h2 class="big">Register for the next event</h2>
+    <form id="form" novalidate>
+      <label>Full name<input name="name" required></label>
+      <label>Are you an NITK Surathkal student?
+        <select name="nitk" id="nitk" required><option value="">Select</option><option>Yes</option><option>No</option></select>
+      </label>
+      <label class="yes hide">NITK email<input type="email" name="nitkmail"></label>
+      <label class="yes hide">Roll number<input name="roll"></label>
+      <label class="no hide">College or institution<input name="college"></label>
+      <label>Email address<input type="email" name="email" required></label>
+      <label>Phone number<input type="tel" name="phone" required pattern="[0-9+ ]{10,14}"></label>
+      <label class="full">Why do you want to attend?<textarea name="why" rows="3" required></textarea></label>
+      <button class="btn full" type="submit">Register</button>
+      <p class="msg full" id="msg" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap foot">
+    <div><b class="logo">TED<sup>x</sup> NITK Surathkal</b><p>Serving the community with ideas worth spreading.</p></div>
+    <div><h3>Contact</h3><p>NITK Surathkal,<br>Karnataka, India</p></div>
+    <div><h3>Follow us</h3>
+      <p><a href="https://www.instagram.com/tedxnitksurathkal/" target="_blank" rel="noopener">Instagram</a><br>
+      <a href="https://www.facebook.com/tedxnitksurathkal2018/" target="_blank" rel="noopener">Facebook</a></p></div>
+  </div>
+  <p class="legal">This independent TEDx event is operated under license from TED.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
